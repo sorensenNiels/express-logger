@@ -1,6 +1,6 @@
-# Examples using the express idempotency middleware
+# Examples using the express logger middleware
 
-You can find here examples using the `express-idempotency` middleware.
+You can find here examples using the `express-logger` middleware.
 
 | Example   | Description                                                  | Folder     |
 | --------- | ------------------------------------------------------------ | ---------- |
