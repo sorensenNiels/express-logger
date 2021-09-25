@@ -1,9 +1,13 @@
 {
-  "name": "express-logger",
+  "name": "@sorensenniels/express-logger",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sorensenNiels/express-logger.git"
+  },
   "scripts": {
     "compile": "./node_modules/.bin/tsc --build tsconfig.dist.json",
     "test": "./node_modules/.bin/tsc --build tsconfig.test.json && nyc mocha",
