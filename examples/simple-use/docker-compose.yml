@@ -5,6 +5,6 @@ services:
     build:
       context: ../../.
       dockerfile: ./examples/simple-use/Dockerfile
-    image: villemontreal/express-idempotency-example
+    image: sorensenniels/express-logger-example
     ports:
       - '8080:8080'

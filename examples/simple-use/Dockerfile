@@ -12,7 +12,7 @@ RUN npm install && npm run compile && npm prune --production && npm link
 # Installation of package to run the application
 WORKDIR /usr/src/app/examples/simple-use
 
-RUN npm link "express-idempotency" && npm install --production
+RUN npm link "@sorensenniels/express-logger" && npm install --production
 
 EXPOSE 8080
 
