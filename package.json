@@ -46,6 +46,7 @@
     "node-mocks-http": "^1.8.1",
     "nyc": "^15.0.1",
     "prettier": "2.4.1",
+    "prettier-plugin-organize-imports": "^2.3.4",
     "sinon": "^11.1.2",
     "source-map-support": "^0.5.19",
     "ts-node": "^10.2.1",
