@@ -24,8 +24,6 @@
   "license": "MIT",
   "homepage": "https://github.com/sorensenNiels/express-logger",
   "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@types/chai": "^4.2.11",
     "@types/deep-equal": "^1.0.1",
@@ -59,12 +57,5 @@
     "autobind-decorator": "^2.4.0",
     "deep-equal": "^2.0.3",
     "http-status-codes": "^2.1.4"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "",
-      "pre-push": "npm run prettier && npm run lint && npm test"
-    }
   }
 }
