@@ -19,7 +19,7 @@ describe('In memory data adapter', () => {
     }
 
     // Select a single resource and try to find it
-    const index: number = faker.random.number({
+    const index: number = faker.datatype.number({
       min: 0,
       max: idempotencyResources.length - 1
     });
@@ -54,7 +54,7 @@ describe('In memory data adapter', () => {
     }
 
     // Select a single resource and try to find it
-    const index: number = faker.random.number({
+    const index: number = faker.datatype.number({
       min: 0,
       max: idempotencyResources.length - 1
     });
@@ -82,7 +82,7 @@ describe('In memory data adapter', () => {
     }
 
     // Select a single resource and try to find it
-    const index: number = faker.random.number({
+    const index: number = faker.datatype.number({
       min: 0,
       max: idempotencyResources.length - 1
     });
@@ -120,14 +120,14 @@ function createFakeIdempotencyResponse(): IdempotencyResponse {
 
 function createFakeIdempotencyResource(): IdempotencyResource {
   return {
-    idempotencyKey: faker.random.uuid(),
+    idempotencyKey: faker.datatype.uuid(),
     request: createFakeIdempotencyRequest()
   };
 }
 
-function createArrayOfIndempotencyResource(maxResource: number = faker.random.number(999)): IdempotencyResource[] {
+function createArrayOfIndempotencyResource(maxResource: number = faker.datatype.number(999)): IdempotencyResource[] {
   const idempotencyResources: IdempotencyResource[] = [];
-  const resourceCount: number = faker.random.number({
+  const resourceCount: number = faker.datatype.number({
     min: 1,
     max: maxResource
   });

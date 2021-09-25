@@ -97,7 +97,7 @@ describe('Idempotency service', () => {
   });
 
   it('indicates misuse of the idempotency key', async () => {
-    const idempotencyKey = faker.random.uuid();
+    const idempotencyKey = faker.datatype.uuid();
     const req1 = httpMocks.createRequest({
       url: 'https://something',
       method: 'POST',
@@ -170,7 +170,7 @@ function createRequest(): express.Request {
     url: faker.internet.url(),
     method: faker.random.arrayElement(['GET', 'POST', 'PUT', 'DELETE']),
     headers: {
-      'idempotency-key': faker.random.uuid()
+      'idempotency-key': faker.datatype.uuid()
     }
   });
 }

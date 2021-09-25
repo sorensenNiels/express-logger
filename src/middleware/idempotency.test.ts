@@ -6,7 +6,7 @@ describe('Idempotency middleware', () => {
     try {
       getSharedIdempotencyService();
       assert.fail('Expecting error to be thrown because the middleware has not been called.');
-    } catch (err) {
+    } catch (err: any) {
       assert.equal(err.message, ERROR_MSG_NOT_INITIALIZED);
       assert.ok(err);
     }
